@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Inquiry | Jalaram Metals</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="site-shell">
+
+    <!-- Header section -->
+    <header class="site-header">
+        <div class="brand-row">
+
+            <a class="brand" href="index.html">
+                <span class="brand-mark">Jm</span>
+
+                <span class="brand-copy">
+                    <span class="brand-name">Jalaram Metals</span>
+                    <span class="brand-tag">An ISO 9001 Certified Company</span>
+                    <span class="brand-tag">Bringing 45 Year's Experience in brass Components</span>
+                </span>
+            </a>
+
+            <div class="header-product">
+                <img src="assets/brass-components.svg" alt="Brass components">
+            </div>
+
+            <p class="header-intro">
+                Jalaram Metals are a high volume brass turned part supplier
+                who produce precision components to specific drawing tolerances.
+                Due to sound engineering and innovative flair, we can solve
+                manufacturing requirements of the most technically demanding parts.
+            </p>
+
+            <div class="gear-art" aria-hidden="true">
+                <span>⚙</span>
+                <span>⚙</span>
+            </div>
+
+        </div>
+
+        <!-- Navigation menu -->
+        <nav class="main-nav">
+            <button class="menu-toggle" type="button"
+                aria-expanded="false" aria-controls="nav-links">
+                Menu ☰
+            </button>
+
+            <div class="nav-links" id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="profile.html">Profile</a>
+                <a href="products.html">Products</a>
+                <a href="contact.html">Contact Us</a>
+                <a class="active" href="inquiry.html">Inquiry</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Inquiry form -->
+    <main class="inner-page">
+
+        <p class="eyebrow">Product enquiry</p>
+        <h1>Inquiry</h1>
+
+        <p class="page-lead">
+            Share the details of the brass component you are looking for.
+        </p>
+
+        <form class="contact-form" id="contact-form">
+
+            <label for="name">Name</label>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                placeholder="Your name"
+            >
+
+            <label for="email">Email</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="you@example.com"
+            >
+
+            <label for="product">Product / component details</label>
+            <textarea
+                id="product"
+                name="product"
+                rows="4"
+                required
+                placeholder="Drawing, specification or requirement"
+            ></textarea>
+
+            <button class="gold-button" type="submit">
+                Prepare inquiry
+            </button>
+
+            <p class="form-note" id="form-note">
+                This demo form does not send an inquiry; no company
+                submission endpoint was provided.
+            </p>
+
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <span>Jalaram Metals</span>
+        <span>Brass turned parts &amp; precision components</span>
+    </footer>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

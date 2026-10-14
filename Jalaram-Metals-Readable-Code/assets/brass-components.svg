@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420">
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="0.9" y2="1"><stop stop-color="#24221c"/><stop offset=".55" stop-color="#121210"/><stop offset="1" stop-color="#050505"/></linearGradient>
+ <linearGradient id="brass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff0a4"/><stop offset=".18" stop-color="#b17a25"/><stop offset=".35" stop-color="#f9d86a"/><stop offset=".53" stop-color="#7b4b17"/><stop offset=".7" stop-color="#edbd4f"/><stop offset="1" stop-color="#4b3217"/></linearGradient>
+ <linearGradient id="steel" x1="0" y1="0" x2="1" y2=".1"><stop stop-color="#f6f5ed"/><stop offset=".25" stop-color="#858a8c"/><stop offset=".5" stop-color="#fafafa"/><stop offset=".78" stop-color="#666a6d"/><stop offset="1" stop-color="#d9d9d3"/></linearGradient>
+ <linearGradient id="reflection" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d7aa4a" stop-opacity=".25"/><stop offset="1" stop-color="#050505" stop-opacity="0"/></linearGradient>
+ <filter id="shadow"><feGaussianBlur stdDeviation="9"/></filter>
+</defs>
+<rect width="900" height="420" fill="url(#bg)"/>
+<ellipse cx="470" cy="325" rx="300" ry="28" fill="#000" opacity=".8" filter="url(#shadow)"/>
+<!-- steel turned part -->
+<g transform="translate(165 105)">
+ <ellipse cx="100" cy="195" rx="88" ry="22" fill="#000" opacity=".7"/>
+ <path d="M56 52 Q100 30 144 52 L153 78 L143 93 L151 126 L134 145 L128 183 Q100 205 72 183 L66 145 L49 126 L57 93 L47 78Z" fill="url(#steel)" stroke="#4c4d4d" stroke-width="3"/>
+ <ellipse cx="100" cy="52" rx="44" ry="13" fill="#e8e8e2" stroke="#65686a" stroke-width="3"/>
+ <ellipse cx="100" cy="52" rx="25" ry="7" fill="#777d80"/>
+ <ellipse cx="100" cy="52" rx="15" ry="4" fill="#282b2d"/>
+ <path d="M55 78 Q100 95 145 78 M52 125 Q100 143 148 125 M70 147 Q100 158 130 147" fill="none" stroke="#55595a" stroke-width="4" opacity=".75"/>
+ <path d="M73 184 L78 214 Q100 229 122 214 L127 184" fill="url(#steel)" stroke="#57595b" stroke-width="3"/>
+</g>
+<!-- upright brass component -->
+<g transform="translate(430 93)">
+ <ellipse cx="55" cy="240" rx="48" ry="13" fill="#000" opacity=".7"/>
+ <path d="M35 34 L75 34 L82 54 L76 68 L86 91 L75 111 L80 146 L68 167 L69 214 L41 214 L42 167 L30 146 L35 111 L24 91 L34 68 L28 54Z" fill="url(#brass)" stroke="#674516" stroke-width="3"/>
+ <ellipse cx="55" cy="34" rx="21" ry="8" fill="#f8db79" stroke="#79501a" stroke-width="3"/>
+ <ellipse cx="55" cy="34" rx="10" ry="4" fill="#6b481d"/>
+ <path d="M30 68 L77 68 M29 91 L81 91 M34 111 L76 111 M38 146 L72 146 M41 167 L69 167" stroke="#fce79b" stroke-width="4" opacity=".85"/>
+ <path d="M42 214 L42 229 Q55 240 68 229 L68 214" fill="url(#brass)" stroke="#674516" stroke-width="2"/>
+</g>
+<!-- horizontal threaded brass fitting -->
+<g transform="translate(525 142) rotate(-8)">
+ <ellipse cx="180" cy="128" rx="160" ry="22" fill="#000" opacity=".8"/>
+ <path d="M16 39 L45 17 L257 17 Q287 17 301 43 L301 95 Q287 117 257 117 L45 117 L16 95Z" fill="url(#brass)" stroke="#704818" stroke-width="4"/>
+ <ellipse cx="17" cy="67" rx="17" ry="40" fill="#9a671e" stroke="#f4d16b" stroke-width="4"/>
+ <ellipse cx="17" cy="67" rx="8" ry="25" fill="#20160a"/>
+ <ellipse cx="301" cy="67" rx="18" ry="39" fill="#4a3015" stroke="#f1ce70" stroke-width="4"/>
+ <ellipse cx="301" cy="67" rx="10" ry="27" fill="#15110c" stroke="#d8a83c" stroke-width="3"/>
+ <path d="M60 18 L60 116 M83 18 L83 116 M106 18 L106 116 M129 18 L129 116 M152 18 L152 116 M175 18 L175 116 M198 18 L198 116 M221 18 L221 116 M244 18 L244 116" stroke="#714514" stroke-width="5" opacity=".85"/>
+ <path d="M55 22 L55 110 M78 22 L78 110 M101 22 L101 110 M124 22 L124 110 M147 22 L147 110 M170 22 L170 110 M193 22 L193 110 M216 22 L216 110 M239 22 L239 110" stroke="#ffe9a0" stroke-width="2" opacity=".9"/>
+</g>
+<!-- subtle floor reflection -->
+<path d="M0 300 Q450 340 900 300 L900 420 L0 420Z" fill="url(#reflection)"/>
+<g opacity=".14" transform="translate(0 620) scale(1 -1)">
+ <path d="M595 170 L650 160 L790 160 L830 190 L830 245 L790 267 L650 267 L595 245Z" fill="url(#brass)"/>
+</g>
+</svg>
